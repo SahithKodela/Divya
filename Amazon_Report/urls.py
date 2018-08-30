@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from graph.views import dash_view,ChartData
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',dash_view),
+path('chat/',ChartData.as_view())
 ]
