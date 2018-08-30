@@ -51,7 +51,7 @@ var chart = new Chart(ctx, {
     data: {
         labels: data,
         datasets: [{
-      label: "Estimated",
+      label: "Estimated Volume",
       fill: false,
       lineTension: 0.1,
       backgroundColor: "rgba(225,0,0,0.4)",
@@ -73,7 +73,7 @@ var chart = new Chart(ctx, {
       data: data1,
       spanGaps: true,
     }, {
-      label: "Actual",
+      label: "Slam Volume",
       fill: true,
       lineTension: 0.1,
       backgroundColor: "rgba(167,105,0,0.4)",
@@ -129,22 +129,13 @@ var chart = new Chart(ctx, {
             <canvas id="myChart" width="600" height="400"></canvas>
         </div>
 <form action="/" style="float:right;">
-     Lane:
-  <input list="browsers" name="browser">
-
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist><br>
+    
     Date:
-    <input type="date" name="d"><br>
-    Start time:
-    <input type="time" name="stime"><br>
-    End time:
-    <input type="time" name="etime"><br>
+    <input name="d"><br>
+    Start Lane:
+    <input name="start"><br>
+    End Lane:
+    <input name="end"><br>
     <button data-href-template="" type="submit">Submit</button>
 </form>
 </body>

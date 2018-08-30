@@ -6,7 +6,11 @@ l=[]
 m=[]
 n=[]
 def dash_view(request):
-    csv_file = open('Top Lanes.csv', 'r')
+    global l,m,n
+    l=[]
+    m=[]
+    n=[]
+    csv_file = open(r'C:\Users\Edha Ravali\Dropbox\Family\Sahith Kodela\Development\Divya\Amazon_Report\graph\Top Lanes.csv', 'r')
     x = csv.reader(csv_file, delimiter=',')
     d=str(request.GET.get("d")).replace("-","/")
     f = str(request.GET.get("start"))
